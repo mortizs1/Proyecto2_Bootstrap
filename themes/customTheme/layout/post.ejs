@@ -1,0 +1,30 @@
+<div class="container">
+<div class='row'>
+    <a class='btn btn-default' href='/'>< Home</a>
+</div>
+<div class='row'>
+    <h1 style="text-align: center;"><%- page.title %></h1>
+    <p> <%- page.informacion1 %> </p>
+    <br>
+    <br>
+    <div class="col-sm-6">
+    <h2 style="text-align: center;"><%- page.title %></h2>
+    <br>
+    <br>
+    <br>
+    <p> <%- page.informacion2 %> </p>
+    </div>
+    <div class="col-sm-6">
+        <iframe width="560" height="315" src="<%= page.video %>" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <%- page.lista %>
+      <h3 style="text-align: center;"><%- page.footer %></h3>
+    </div>
+  </div>
+</div>
+</div>

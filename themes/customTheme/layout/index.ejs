@@ -1,0 +1,45 @@
+<div class="container">
+<div>
+  <div class='row text-center'>
+      <img src="../image/logo.png" alt="logo">
+      <h1><%= config.author %></h1>
+
+  </div>
+  <br>
+  <div class="row text-left">
+      <p><%= config.subtitle %></p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <% page.posts.each(function(post){ %>
+      <div class="col-sm-4">
+        <ul>
+            <li>
+                <h3>
+                  <div class="r1">
+                    <a href="<%- url_for(post.path) %>">
+                  </div>
+                        <%= post.title %>
+                    </a>
+                </h3>
+                <div class='text-muted'>
+                  <img src="<%= post.image %>" width="110%">
+                </div>
+                <% if(post.excerpt) { %>
+                    <p>
+                        <%- post.excerpt %>
+                    </p>
+                <% } %>
+            </li>
+      </ul>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+</div>

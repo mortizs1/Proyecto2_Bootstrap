@@ -1,0 +1,23 @@
+body{
+  font-family: 'Roboto' Arial sans-serif;
+  color: rgb(158, 158, 158);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/moto1.png') no-repeat center top;
+  background-size: cover;
+}
+
+img{
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.row .col-sm-4{
+  margin: 20px;
+  width: 350px;
+}
+.container #post1{
+  background-color: blue;
+}
